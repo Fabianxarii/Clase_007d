@@ -1,10 +1,10 @@
 from os import system
 def menu_principal():
     opciones = {
-        '1': ('Opción 1', accion1),
-        '2': ('Opción 2', accion2),
-        '3': ('Opción 3', accion3),
-        '4': ('Salir', salir)
+        '1': ('Registrar Trabajadores', reg_trabajador),
+        '2': ('Listar trabajadores', listar_trabajador),
+        '3': ('Imprimir plantilla suledos', imprimir_trabajador),
+        '4': ('Salir del programa', salir)
     }
 
     generar_menu(opciones, '4')
@@ -32,20 +32,21 @@ def ejecutar_opcion(opcion, opciones):
     opciones[opcion][1]()
 
 
-def accion1():
+def reg_trabajador():
     print('Has elegido la opción 1')
+    input()
 
 
-def accion2():
+def listar_trabajador():
     print('Has elegido la opción 2')
+    input()
 
-
-def accion3():
+def imprimir_trabajador():
     print('Has elegido la opción 3')
-
+    input()
 
 def salir():
     print('Saliendo')
-
+    input()
 
 menu_principal()
